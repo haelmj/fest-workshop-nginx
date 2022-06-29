@@ -12,10 +12,6 @@ COPY public ./public/
 
 RUN npm install --production
 
-RUN pwd
-
-RUN ls
-
 RUN npm run build
 
 
