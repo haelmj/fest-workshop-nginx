@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  nginx_proxy:
+    container_name: nginx_proxy
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '80:80'
+    env_file:
+      - .env
